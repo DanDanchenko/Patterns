@@ -16,10 +16,10 @@ namespace Pattern
             //p1.Print();
             //p2.Print();
 
-            
 
-            //Human h1 = new Human("Cain", 12, "black");
-            //h1.Print();
+
+            Human h1 = new Human("Cain", 12, "black");
+            h1.Print();
 
             //h1.Voice();
             //h1.Move();
