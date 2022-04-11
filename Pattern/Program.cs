@@ -8,24 +8,6 @@ namespace Pattern
     {
         static void Main(string[] args)
         {
-            //Animal p1 = new Animal("Adam", 33);
-            //Animal p2 = new Animal("Eve", 33);
-
-            //p1.SetAge(20);
-
-            //p1.Print();
-            //p2.Print();
-
-
-
-            Human h1 = new Human("Cain", 12, "black");
-            h1.Print();
-
-            //h1.Voice();
-            //h1.Move();
-            //Bird bird1 = new Bird("Red", 14, "Red");
-            //bird1.Move();
-            //bird1.Voice();
 
             List<IVoice> Animals = new List<IVoice>();
             Animals.Add(new Human("Cain", 12, "black"));
@@ -36,6 +18,18 @@ namespace Pattern
             {
                 a.Voice();
             }
+            //----------------------------------------------------
+
+            Hero elf = new Hero(new ElfFactory());
+
+            elf.Hit();
+            elf.Run();
+
+            Hero voin = new Hero(new VoinFactory());
+
+            voin.Hit();
+            voin.Run();
+
 
         }
     }
